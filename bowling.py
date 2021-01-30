@@ -52,7 +52,6 @@ def get_score(get_string):
         elif get_string[x] == '/':
             score_prepare.append(15)
             score_prepare.pop(-2)
-    # print(f'Ваш счёт: {sum(score_prepare)}')
     return sum(score_prepare)
 
 
@@ -88,7 +87,6 @@ def get_score_europe(get_string):
                 if i+2 == len(score_prepare):
                     spar_and_strike.append(10)
     score_result = sum(spar_and_strike) + sum(score_prepare)
-    # print(score_result)
     return score_result
 
 
